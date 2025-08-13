@@ -20,9 +20,7 @@ A fully automated Bash script to configure Secure Boot using [`sbctl`](https://g
 
 #### Requirements
 
-- Arch-based Linux distro (uses `pacman`)
-- `sbctl` installed (`pacman -S sbctl`)
-- Secure Boot must be in **Setup Mode**
+- Arch-based Linux distro
 
 #### Usage
 
