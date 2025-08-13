@@ -1,29 +1,40 @@
-# Arch Linux Scripts
+# 🛡️ Arch Security Toolkit
 
-This repository contains a growing collection of scripts designed for Arch-based Linux distributions. Each script is built to automate common system tasks, improve security, or simplify configuration.
+This repository contains a comprehensive Bash script designed for **Arch-based Linux distributions**. It helps automate essential system hardening tasks, improve security posture, and simplify configuration — all from a single interactive menu.
 
-## ✅ Available Scripts
+---
 
-### 🔐 Secure Boot Setup (`secureboot-arch.sh`)
+## ✅ Features
 
-A fully automated Bash script to configure Secure Boot using [`sbctl`](https://github.com/Foxboron/sbctl). It works across any Arch-based distro that uses `pacman`.
+- 🔐 **Secure Boot Setup** using `sbctl`
+- 🔥 **Firewall Management** with optional GUI installer
+- 📋 **Auditd Logging** toggle
+- 🚫 **Fail2ban Protection** for brute-force attack mitigation
+- 🛡️ **Kernel Hardening** via `sysctl`
+- 🧹 **Orphaned Package Cleanup**
+- 🔍 **Security Audit** with:
+  - SSH root login check
+  - Sudo privilege analysis
+  - Kernel hardening status
+  - Auditd, Fail2ban, Firewall, Secure Boot checks
+  - CPU mitigation flags detection (`nopti`, `mds=off`, etc.)
+  - `mitigations=off` global override detection
+  - ⚠️ Performance impact warnings for active mitigations
 
-#### Features
+---
 
-- Detects current distro and verifies it's Arch-based
-- Checks Secure Boot and Setup Mode status
-- Ensures required packages are installed
-- Creates and enrolls Secure Boot keys (including Microsoft keys)
-- Signs unsigned EFI binaries
-- Provides final verification and summary
-- Color-coded output for clarity
+## 📦 Requirements
 
-#### Requirements
+- Arch-based Linux distribution (e.g. Arch, Manjaro, EndeavourOS)
+- `dialog` package (installed automatically if missing)
+- `sbctl`, `ufw`, `audit`, `fail2ban` — installed as needed
 
-- Arch-based Linux distro
+---
 
-#### Usage
+## 🚀 Usage
 
 ```bash
-chmod +x secureboot-arch.sh
-./secureboot-arch.sh
+git clone https://github.com/yourusername/arch-security-toolkit.git
+cd arch-security-toolkit
+chmod +x arch-security-toolkit.sh
+./arch-security-toolkit.sh
