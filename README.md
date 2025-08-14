@@ -2,6 +2,8 @@
 
 This repository contains a comprehensive Bash script designed for **Arch-based Linux distributions**. It helps automate essential system hardening tasks, improve security posture, and simplify configuration — all from a single interactive menu.
 
+![Arch Linux Script](https://raw.githubusercontent.com/conan513/arch-linux-scripts/refs/heads/main/picture.png)
+
 ---
 
 ## ✅ Features
@@ -39,4 +41,3 @@ cd arch-security-toolkit
 chmod +x arch-security-toolkit.sh
 ./arch-security-toolkit.sh
 
-![Arch Linux Script](https://raw.githubusercontent.com/conan513/arch-linux-scripts/refs/heads/main/picture.png)
