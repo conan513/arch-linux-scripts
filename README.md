@@ -38,3 +38,5 @@ git clone https://github.com/yourusername/arch-security-toolkit.git
 cd arch-security-toolkit
 chmod +x arch-security-toolkit.sh
 ./arch-security-toolkit.sh
+
+![Arch Linux Script](https://raw.githubusercontent.com/conan513/arch-linux-scripts/refs/heads/main/picture.png)
